@@ -1,0 +1,2804 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>mocha-webpack (v0.7.0)</a>
+</h1>
+<h4>mocha cli with webpack support</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack">module mocha-webpack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.base">
+            function <span class="apidocSignatureSpan">mocha-webpack.</span>base
+            <span class="apidocSignatureSpan">(runner)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>InjectChangedFilesPlugin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>base.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>checkReporter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>configureMocha</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>contextReplacementPlugin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>createCompiler</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>exists</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>parseArgv</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>parseConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>prepareEntry</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>prepareWebpack</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>requireWebpackConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>resetMocha</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>runner</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.</span>watch</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.InjectChangedFilesPlugin">module mocha-webpack.InjectChangedFilesPlugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.InjectChangedFilesPlugin.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.InjectChangedFilesPlugin.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.base">module mocha-webpack.base</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">mocha-webpack.base.</span>inlineDiffs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">mocha-webpack.base.</span>useColors</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.base.base">
+            function <span class="apidocSignatureSpan">mocha-webpack.</span>base
+            <span class="apidocSignatureSpan">(runner)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.base.color">
+            function <span class="apidocSignatureSpan">mocha-webpack.base.</span>color
+            <span class="apidocSignatureSpan">(type, str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.base.list">
+            function <span class="apidocSignatureSpan">mocha-webpack.base.</span>list
+            <span class="apidocSignatureSpan">(failures)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.base.</span>colors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.base.</span>cursor</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.base.</span>symbols</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mocha-webpack.base.</span>window</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.base.prototype">module mocha-webpack.base.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.base.prototype.epilogue">
+            function <span class="apidocSignatureSpan">mocha-webpack.base.prototype.</span>epilogue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.checkReporter">module mocha-webpack.checkReporter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.checkReporter.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.checkReporter.</span>default
+            <span class="apidocSignatureSpan">(reporter)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.configureMocha">module mocha-webpack.configureMocha</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.configureMocha.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.configureMocha.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.contextReplacementPlugin">module mocha-webpack.contextReplacementPlugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.contextReplacementPlugin.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.contextReplacementPlugin.</span>default
+            <span class="apidocSignatureSpan">(context, matcher)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.createCompiler">module mocha-webpack.createCompiler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.createCompiler.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.createCompiler.</span>default
+            <span class="apidocSignatureSpan">(webpackConfig)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.exists">module mocha-webpack.exists</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.exists.existsDirSync">
+            function <span class="apidocSignatureSpan">mocha-webpack.exists.</span>existsDirSync
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.exists.existsFileSync">
+            function <span class="apidocSignatureSpan">mocha-webpack.exists.</span>existsFileSync
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.parseArgv">module mocha-webpack.parseArgv</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.parseArgv.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.parseArgv.</span>default
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.parseConfig">module mocha-webpack.parseConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.parseConfig.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.parseConfig.</span>default
+            <span class="apidocSignatureSpan">(explicitConfig)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.prepareEntry">module mocha-webpack.prepareEntry</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.prepareEntry.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.prepareEntry.</span>default
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.prepareWebpack">module mocha-webpack.prepareWebpack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.prepareWebpack.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.prepareWebpack.</span>default
+            <span class="apidocSignatureSpan">(options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.requireWebpackConfig">module mocha-webpack.requireWebpackConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.requireWebpackConfig.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.requireWebpackConfig.</span>default
+            <span class="apidocSignatureSpan">(webpackConfig)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.resetMocha">module mocha-webpack.resetMocha</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.resetMocha.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.resetMocha.</span>default
+            <span class="apidocSignatureSpan">(mocha, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.runner">module mocha-webpack.runner</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.runner.run">
+            function <span class="apidocSignatureSpan">mocha-webpack.runner.</span>run
+            <span class="apidocSignatureSpan">(options, webpackConfig)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.runner.watch">
+            function <span class="apidocSignatureSpan">mocha-webpack.runner.</span>watch
+            <span class="apidocSignatureSpan">(options, webpackConfig)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.utils">module mocha-webpack.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.canonicalize">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>canonicalize
+            <span class="apidocSignatureSpan">(value, stack)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.clean">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>clean
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.escape">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>escape
+            <span class="apidocSignatureSpan">(html)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.files">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>files
+            <span class="apidocSignatureSpan">(dir, ext, ret)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.filter">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>filter
+            <span class="apidocSignatureSpan">(arr, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.forEach">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>forEach
+            <span class="apidocSignatureSpan">(arr, fn, scope)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.getError">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>getError
+            <span class="apidocSignatureSpan">(err)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.highlightTags">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>highlightTags
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.indexOf">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>indexOf
+            <span class="apidocSignatureSpan">(arr, obj, start)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.inherits">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>inherits
+            <span class="apidocSignatureSpan">(ctor, superCtor)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.isArray">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.isBuffer">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isBuffer
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.isString">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isString
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.keys">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>keys
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.lookupFiles">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>lookupFiles
+            <span class="apidocSignatureSpan">(path, extensions, recursive)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.map">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>map
+            <span class="apidocSignatureSpan">(arr, fn, scope)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.parseQuery">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>parseQuery
+            <span class="apidocSignatureSpan">(qs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.reduce">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>reduce
+            <span class="apidocSignatureSpan">(arr, fn, val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.slug">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>slug
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.stackTraceFilter">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>stackTraceFilter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.stringify">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>stringify
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.trim">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>trim
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.type">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>type
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.undefinedError">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>undefinedError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.utils.watch">
+            function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>watch
+            <span class="apidocSignatureSpan">(files, fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mocha-webpack.watch">module mocha-webpack.watch</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mocha-webpack.watch.default">
+            function <span class="apidocSignatureSpan">mocha-webpack.watch.</span>default
+            <span class="apidocSignatureSpan">(webpackConfig, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack" id="apidoc.module.mocha-webpack">module mocha-webpack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.base" id="apidoc.element.mocha-webpack.base">
+        function <span class="apidocSignatureSpan">mocha-webpack.</span>base
+        <span class="apidocSignatureSpan">(runner)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Base(runner) {
+  var stats = this.stats = { suites: 0, tests: 0, passes: 0, pending: 0, failures: 0 };
+  var failures = this.failures = [];
+
+  if (!runner) {
+    return;
+  }
+  this.runner = runner;
+
+  runner.stats = stats;
+
+  runner.on('start', function() {
+    stats.start = new Date();
+  });
+
+  runner.on('suite', function(suite) {
+    stats.suites = stats.suites || 0;
+    suite.root || stats.suites++;
+  });
+
+  runner.on('test end', function() {
+    stats.tests = stats.tests || 0;
+    stats.tests++;
+  });
+
+  runner.on('pass', function(test) {
+    stats.passes = stats.passes || 0;
+
+    if (test.duration &gt; test.slow()) {
+      test.speed = 'slow';
+    } else if (test.duration &gt; test.slow() / 2) {
+      test.speed = 'medium';
+    } else {
+      test.speed = 'fast';
+    }
+
+    stats.passes++;
+  });
+
+  runner.on('fail', function(test, err) {
+    stats.failures = stats.failures || 0;
+    stats.failures++;
+    test.err = err;
+    failures.push(test);
+  });
+
+  runner.on('end', function() {
+    stats.end = new Date();
+    stats.duration = new Date() - stats.start;
+  });
+
+  runner.on('pending', function() {
+    stats.pending++;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.InjectChangedFilesPlugin" id="apidoc.module.mocha-webpack.InjectChangedFilesPlugin">module mocha-webpack.InjectChangedFilesPlugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.InjectChangedFilesPlugin.default" id="apidoc.element.mocha-webpack.InjectChangedFilesPlugin.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.InjectChangedFilesPlugin.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function InjectChangedFilesPlugin() {
+  var _this = this;
+
+  _classCallCheck(this, InjectChangedFilesPlugin);
+
+  this.testsCompleted = function (failed) {
+    if (failed) {
+      [].push.apply(_this.failedFiles, _this.hotFiles);
+    } else {
+      _this.failedFiles = [];
+    }
+  };
+
+  this.failedFiles = [];
+  this.hotFiles = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.base" id="apidoc.module.mocha-webpack.base">module mocha-webpack.base</a></h1>
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.base.base" id="apidoc.element.mocha-webpack.base.base">
+        function <span class="apidocSignatureSpan">mocha-webpack.</span>base
+        <span class="apidocSignatureSpan">(runner)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Base(runner) {
+  var stats = this.stats = { suites: 0, tests: 0, passes: 0, pending: 0, failures: 0 };
+  var failures = this.failures = [];
+
+  if (!runner) {
+    return;
+  }
+  this.runner = runner;
+
+  runner.stats = stats;
+
+  runner.on('start', function() {
+    stats.start = new Date();
+  });
+
+  runner.on('suite', function(suite) {
+    stats.suites = stats.suites || 0;
+    suite.root || stats.suites++;
+  });
+
+  runner.on('test end', function() {
+    stats.tests = stats.tests || 0;
+    stats.tests++;
+  });
+
+  runner.on('pass', function(test) {
+    stats.passes = stats.passes || 0;
+
+    if (test.duration &gt; test.slow()) {
+      test.speed = 'slow';
+    } else if (test.duration &gt; test.slow() / 2) {
+      test.speed = 'medium';
+    } else {
+      test.speed = 'fast';
+    }
+
+    stats.passes++;
+  });
+
+  runner.on('fail', function(test, err) {
+    stats.failures = stats.failures || 0;
+    stats.failures++;
+    test.err = err;
+    failures.push(test);
+  });
+
+  runner.on('end', function() {
+    stats.end = new Date();
+    stats.duration = new Date() - stats.start;
+  });
+
+  runner.on('pending', function() {
+    stats.pending++;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.base.color" id="apidoc.element.mocha-webpack.base.color">
+        function <span class="apidocSignatureSpan">mocha-webpack.base.</span>color
+        <span class="apidocSignatureSpan">(type, str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">color = function (type, str) {
+  if (!exports.useColors) {
+    return String(str);
+  }
+  return '\u001b[' + exports.colors[type] + 'm' + str + '\u001b[0m';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.base.list" id="apidoc.element.mocha-webpack.base.list">
+        function <span class="apidocSignatureSpan">mocha-webpack.base.</span>list
+        <span class="apidocSignatureSpan">(failures)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function (failures) {
+  console.log();
+  failures.forEach(function(test, i) {
+    // format
+    var fmt = color('error title', '  %s) %s:\n')
+      + color('error message', '     %s')
+      + color('error stack', '\n%s\n');
+
+    // msg
+    var msg;
+    var err = test.err;
+    var message;
+    if (err.message &amp;&amp; typeof err.message.toString === 'function') {
+      message = err.message + '';
+    } else if (typeof err.inspect === 'function') {
+      message = err.inspect() + '';
+    } else {
+      message = '';
+    }
+    var stack = err.stack || message;
+    var index = stack.indexOf(message);
+    var actual = err.actual;
+    var expected = err.expected;
+    var escape = true;
+
+    if (index === -1) {
+      msg = message;
+    } else {
+      index += message.length;
+      msg = stack.slice(0, index);
+      // remove msg from stack
+      stack = stack.slice(index + 1);
+    }
+
+    // uncaught
+    if (err.uncaught) {
+      msg = 'Uncaught ' + msg;
+    }
+    // explicitly show diff
+    if (err.showDiff !== false &amp;&amp; sameType(actual, expected) &amp;&amp; expected !== undefined) {
+      escape = false;
+      if (!(utils.isString(actual) &amp;&amp; utils.isString(expected))) {
+        err.actual = actual = utils.stringify(actual);
+        err.expected = expected = utils.stringify(expected);
+      }
+
+      fmt = color('error title', '  %s) %s:\n%s') + color('error stack', '\n%s\n');
+      var match = message.match(/^([^:]+): expected/);
+      msg = '\n      ' + color('error message', match ? match[1] : msg);
+
+      if (exports.inlineDiffs) {
+        msg += inlineDiff(err, escape);
+      } else {
+        msg += unifiedDiff(err, escape);
+      }
+    }
+
+    // indent stack trace
+    stack = stack.replace(/^/gm, '  ');
+
+    console.log(fmt, (i + 1), test.fullTitle(), msg, stack);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.base.prototype" id="apidoc.module.mocha-webpack.base.prototype">module mocha-webpack.base.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.base.prototype.epilogue" id="apidoc.element.mocha-webpack.base.prototype.epilogue">
+        function <span class="apidocSignatureSpan">mocha-webpack.base.prototype.</span>epilogue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">epilogue = function () {
+  var stats = this.stats;
+  var fmt;
+
+  console.log();
+
+  // passes
+  fmt = color('bright pass', ' ')
+    + color('green', ' %d passing')
+    + color('light', ' (%s)');
+
+  console.log(fmt,
+    stats.passes || 0,
+    ms(stats.duration));
+
+  // pending
+  if (stats.pending) {
+    fmt = color('pending', ' ')
+      + color('pending', ' %d pending');
+
+    console.log(fmt, stats.pending);
+  }
+
+  // failures
+  if (stats.failures) {
+    fmt = color('fail', '  %d failing');
+
+    console.log(fmt, stats.failures);
+
+    Base.list(this.failures);
+    console.log();
+  }
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.checkReporter" id="apidoc.module.mocha-webpack.checkReporter">module mocha-webpack.checkReporter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.checkReporter.default" id="apidoc.element.mocha-webpack.checkReporter.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.checkReporter.</span>default
+        <span class="apidocSignatureSpan">(reporter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkReporter(reporter) {
+  try {
+    require("mocha/lib/reporters/" + reporter); // eslint-disable-line global-require
+  } catch (errModule) {
+    try {
+      require(reporter); // eslint-disable-line global-require
+    } catch (errLocal) {
+      throw new Error("reporter \"" + reporter + "\" does not exist");
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.configureMocha" id="apidoc.module.mocha-webpack.configureMocha">module mocha-webpack.configureMocha</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.configureMocha.default" id="apidoc.element.mocha-webpack.configureMocha.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.configureMocha.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function configureMocha() {
+  var options = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  // infinite stack traces
+  Error.stackTraceLimit = Infinity;
+
+  // init defauls
+  _lodash2.default.defaults(options, defaults);
+
+  // check reporter
+  (0, _checkReporter2.default)(options.reporter);
+
+  // init mocha
+  var mocha = new _mocha2.default();
+
+  // reporter
+  mocha.reporter(options.reporter, options.reporterOptions);
+
+  // colors
+  mocha.useColors(options.colors);
+
+  // inline-diffs
+  mocha.useInlineDiffs(options.inlineDiffs);
+
+  // slow &lt;ms&gt;
+  mocha.suite.slow(options.slow);
+
+  // timeout &lt;ms&gt;
+  if (options.timeout === 0) {
+    mocha.enableTimeouts(false);
+  } else {
+    mocha.suite.timeout(options.timeout);
+  }
+
+  // bail
+  mocha.suite.bail(options.bail);
+
+  // grep
+  if (options.grep) {
+    mocha.grep(new RegExp(options.grep));
+  }
+
+  // fgrep
+  if (options.fgrep) {
+    mocha.grep(options.fgrep);
+  }
+
+  // invert
+  if (options.invert) {
+    mocha.invert();
+  }
+
+  // check-leaks
+  if (options.checkLeaks) {
+    mocha.checkLeaks();
+  }
+
+  // full-trace
+  if (options.fullTrace) {
+    mocha.fullTrace();
+  }
+
+  // growl
+  if (options.growl) {
+    mocha.growl();
+  }
+
+  // async-only
+  if (options.asyncOnly) {
+    mocha.asyncOnly();
+  }
+
+  // delay
+  if (options.delay) {
+    mocha.delay();
+  }
+
+  // retries
+  if (options.retries) {
+    mocha.suite.retries(options.retries);
+  }
+
+  // interface
+  mocha.ui(options.ui);
+
+  return mocha;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.contextReplacementPlugin" id="apidoc.module.mocha-webpack.contextReplacementPlugin">module mocha-webpack.contextReplacementPlugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.contextReplacementPlugin.default" id="apidoc.element.mocha-webpack.contextReplacementPlugin.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.contextReplacementPlugin.</span>default
+        <span class="apidocSignatureSpan">(context, matcher)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function contextReplacementPlugin(context, matcher) {
+  var recursive = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : false;
+
+  // use ContextReplacementPlugin to replace the initial context with a
+  // new regExp to match the desired files
+  return new _webpack.ContextReplacementPlugin(new RegExp(context), function (result) {
+    if (result.request === context) {
+      // provide a new test function for resolving
+      result.regExp = { test: matcher }; // eslint-disable-line no-param-reassign
+      result.recursive = recursive; // eslint-disable-line no-param-reassign
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.createCompiler" id="apidoc.module.mocha-webpack.createCompiler">module mocha-webpack.createCompiler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.createCompiler.default" id="apidoc.element.mocha-webpack.createCompiler.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.createCompiler.</span>default
+        <span class="apidocSignatureSpan">(webpackConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createCompiler(webpackConfig) {
+  var cb = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : missing();
+
+  (0, _invariant2.default)(_lodash2.default.isPlainObject(webpackConfig), 'webpackConfig must be a plain object');
+  (0, _invariant2.default)(_lodash2.default.isFunction(cb), 'cb must be a function');
+
+  var compiler = (0, _webpack2.default)(webpackConfig);
+
+  var failedModules = [];
+  var failedModulesErrors = [];
+
+  compiler.plugin('failed', cb);
+
+  compiler.plugin('compilation', function (compilation) {
+    // Workaround to tag build as failed when webpack marks a failed module as just a warning
+    compilation.plugin('build-module', function (module) {
+      var ident = module.identifier();
+
+      if (ident) {
+        var idx = failedModules.indexOf(ident);
+        if (idx !== -1) {
+          failedModules.splice(idx, 1);
+          failedModulesErrors.splice(idx, 1);
+        }
+      }
+    });
+    compilation.plugin('failed-module', function (module) {
+      var ident = module.identifier();
+      if (ident) {
+        failedModules.push(ident);
+        failedModulesErrors.push(module.error);
+      }
+    });
+  });
+
+  compiler.plugin('done', function (stats) {
+    if (stats.hasErrors()) {
+      var jsonStats = stats.toJson();
+
+      var _jsonStats$errors = _slicedToArray(jsonStats.errors, 1);
+
+      var err = _jsonStats$errors[0];
+
+      cb(err);
+    } else if (failedModulesErrors.length) {
+      var _err = failedModulesErrors[0];
+
+      cb(_err);
+    } else {
+      cb();
+    }
+  });
+  return compiler;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.exists" id="apidoc.module.mocha-webpack.exists">module mocha-webpack.exists</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.exists.existsDirSync" id="apidoc.element.mocha-webpack.exists.existsDirSync">
+        function <span class="apidocSignatureSpan">mocha-webpack.exists.</span>existsDirSync
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function existsDirSync(file) {
+  try {
+    return _fs2.default.statSync(file).isDirectory();
+  } catch (err) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.exists.existsFileSync" id="apidoc.element.mocha-webpack.exists.existsFileSync">
+        function <span class="apidocSignatureSpan">mocha-webpack.exists.</span>existsFileSync
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function existsFileSync(file) {
+  try {
+    _fs2.default.accessSync(file, _fs2.default.F_OK);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.parseArgv" id="apidoc.module.mocha-webpack.parseArgv">module mocha-webpack.parseArgv</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.parseArgv.default" id="apidoc.element.mocha-webpack.parseArgv.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.parseArgv.</span>default
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseArgv(argv) {
+  var ignoreDefaults = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : false;
+
+  var parsedArgs = (0, _yargs2.default)(argv).help('help').alias('help', 'h', '?').version(function () {
+    return _package.version;
+  }).demand(0, 1).options(options).strict().argv;
+
+  var files = parsedArgs._;
+
+  if (!files.length) {
+    files = ['./test'];
+  }
+
+  var parsedOptions = _lodash2.default.pick(parsedArgs, parameters); // pick all parameters as new object
+  var validOptions = _lodash2.default.omitBy(parsedOptions, _lodash2.default.isUndefined); // remove all undefined values
+
+  _lodash2.default.forEach(parametersWithMultipleArgs, function (key) {
+    if (_lodash2.default.has(validOptions, key)) {
+      var value = validOptions[key];
+      if (!Array.isArray(value)) {
+        validOptions[key] = [value];
+      }
+    }
+  });
+
+  _lodash2.default.forOwn(validOptions, function (value, key) {
+    // validate all non-array options with required arg that it is not duplicated
+    // see https://github.com/yargs/yargs/issues/229
+    if (parametersWithMultipleArgs.indexOf(key) === -1 &amp;&amp; _lodash2.default.isArray(value)) {
+      (function () {
+        var arg = _lodash2.default.kebabCase(key);
+        var provided = value.map(function (v) {
+          return '--' + arg + ' ' + v;
+        }).join(' ');
+        var expected = '--' + arg + ' ' + value[0];
+
+        throw new Error('Duplicating arguments for "--' + arg + '" is not allowed. "' + provided + '" was provided, but expected
+ "' + expected + '"'); // eslint-disable-line max-len
+      })();
+    }
+  });
+
+  validOptions.files = files;
+
+  var reporterOptions = {};
+
+  if (validOptions.reporterOptions) {
+    validOptions.reporterOptions.split(',').forEach(function (opt) {
+      var L = opt.split('=');
+      if (L.length &gt; 2 || L.length === 0) {
+        throw new Error('invalid reporter option ' + opt);
+      } else if (L.length === 2) {
+        reporterOptions[L[0]] = L[1];
+      } else {
+        reporterOptions[L[0]] = true;
+      }
+    });
+  }
+
+  validOptions.reporterOptions = reporterOptions;
+  validOptions.require = validOptions.require || [];
+  validOptions.include = validOptions.include || [];
+
+  if (ignoreDefaults) {
+    var _ret2 = function () {
+      var userOptions = (0, _yargs2.default)(argv).argv;
+      var providedKeys = _lodash2.default.keys(userOptions);
+      var usedAliases = _lodash2.default.flatten(_lodash2.default.filter(groupedAliases, function (aliases) {
+        return _lodash2.default.some(aliases, function (alias) {
+          return providedKeys.indexOf(alias) !== -1;
+        });
+      }));
+
+      if (parsedArgs._.length) {
+        usedAliases.push('files');
+      }
+
+      return {
+        v: _lodash2.default.pick(validOptions, usedAliases)
+      };
+    }();
+
+    if ((typeof _ret2 === 'undefined' ? 'undefined' : _typeof(_ret2)) === "object") return _ret2.v;
+  }
+
+  return validOptions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.parseConfig" id="apidoc.module.mocha-webpack.parseConfig">module mocha-webpack.parseConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.parseConfig.default" id="apidoc.element.mocha-webpack.parseConfig.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.parseConfig.</span>default
+        <span class="apidocSignatureSpan">(explicitConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseConfig(explicitConfig) {
+  var config = explicitConfig || defaultConfig;
+
+  if (!(0, _exists.existsFileSync)(config)) {
+    return handleMissingConfig(explicitConfig);
+  }
+
+  var argv = _fs2.default.readFileSync(config, 'utf8').replace(/\\\s/g, '%20').split(/\s/).filter(Boolean).map(function (value) {
+    return value.replace(/%20/g, ' ');
+  });
+  var defaultOptions = (0, _parseArgv2.default)(argv, true);
+  return defaultOptions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.prepareEntry" id="apidoc.module.mocha-webpack.prepareEntry">module mocha-webpack.prepareEntry</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.prepareEntry.default" id="apidoc.element.mocha-webpack.prepareEntry.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.prepareEntry.</span>default
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareEntry(path) {
+  var watch = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : false;
+
+  if (watch) {
+    return "\n    // This gets replaced by webpack with the updated files on rebuild\n    var __webpackManifest__ = [];\n\n    var
+ testsContext = require.context(\"" + path + "\", false);\n\n    function inManifest(path) {\n      return __webpackManifest__.indexOf(path) &gt;= 0;\n    }\n\n    var runnable = testsContext.keys().filter(inManifest);\n\n    runnable.forEach(testsContext);\n    ";
+  }
+  return "\n    var testsContext = require.context(\"" + path + "\", false);\n\n    var runnable = testsContext.keys();\n\n    runnable
+.forEach(testsContext);\n    ";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.prepareWebpack" id="apidoc.module.mocha-webpack.prepareWebpack">module mocha-webpack.prepareWebpack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.prepareWebpack.default" id="apidoc.element.mocha-webpack.prepareWebpack.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.prepareWebpack.</span>default
+        <span class="apidocSignatureSpan">(options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareWebpack(options, cb) {
+  var _options$files = _slicedToArray(options.files, 1);
+
+  var file = _options$files[0];
+
+  var glob = (0, _isGlob2.default)(file);
+
+  var webpackInfoPlugin = new _webpackInfoPlugin2.default({
+    stats: {
+      // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+      // context: false,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      chunkModules: false,
+      modules: false,
+      children: false,
+      cached: false,
+      reasons: false,
+      source: false,
+      errorDetails: true,
+      chunkOrigins: false,
+      colors: options.colors
+    },
+    state: false });
+
+  var webpackPlugins = [webpackInfoPlugin];
+
+  if (glob || (0, _exists.existsDirSync)(file)) {
+    (function () {
+      var matchModule = function matchModule(mod) {
+        // eslint-disable-line no-inner-declarations
+        // normalize path to match glob
+        var correctedPath = _path2.default.join(parent, mod);
+        return matcher(correctedPath);
+      };
+
+      var globPattern = glob ? file : directoryToGlob(file, options);
+
+      var matcher = (0, _anymatch2.default)(globPattern);
+      var parent = (0, _globParent2.default)(globPattern);
+      var directory = _path2.default.resolve(parent);
+
+      var context = (0, _normalizePath2.default)(_path2.default.relative(tmpPath, directory));
+      var recursive = globPattern.indexOf('**') !== -1; // or via options.recursive?
+
+      var optionsHash = _objectHash2.default.MD5(options); // eslint-disable-line new-cap
+
+      var entryFilePath = _path2.default.join(tmpPath, optionsHash + '-entry.js');
+      var outputFilePath = _path2.default.join(tmpPath, optionsHash, optionsHash + '-output.js');
+
+      webpackPlugins.push((0, _contextReplacementPlugin2.default)(context, matchModule, recursive));
+
+      var webpackConfig = createWebpackConfig(options.webpackConfig, entryFilePath, outputFilePath, webpackPlugins, options.include
+);
+
+      var fileContent = (0, _prepareEntry2.default)(context, options.watch);
+
+      if (!(0, _exists.existsFileSync)(entryFilePath)) {
+        _fsExtra2.default.outputFile(entryFilePath, fileContent, function (err) {
+          cb(err, webpackConfig);
+        });
+      } else {
+        process.nextTick(function () {
+          cb(null, webpackConfig);
+        });
+      }
+    })();
+  } else if ((0, _exists.existsFileSync)(file)) {
+    (function () {
+      var entryFilePath = _path2.default.resolve(file);
+      var outputFilePath = _path2.default.join(tmpPath, _path2.default.basename(entryFilePath));
+      var webpackConfig = createWebpackConfig(options.webpackConfig, entryFilePath, outputFilePath, webpackPlugins, options.include
+);
+      process.nextTick(function () {
+        cb(null, webpackConfig);
+      });
+    })();
+  } else {
+    process.nextTick(function () {
+      cb(new Error('File/Directory not found: ' + file));
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.requireWebpackConfig" id="apidoc.module.mocha-webpack.requireWebpackConfig">module mocha-webpack.requireWebpackConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.requireWebpackConfig.default" id="apidoc.element.mocha-webpack.requireWebpackConfig.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.requireWebpackConfig.</span>default
+        <span class="apidocSignatureSpan">(webpackConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function requireWebpackConfig(webpackConfig) {
+  if (!webpackConfig) {
+    return {};
+  }
+
+  var configPath = _path2.default.resolve(webpackConfig);
+  var configExtension = getConfigExtension(configPath);
+
+  if (!fileExists(configPath)) {
+    if (configExtension !== '.js') {
+      return {};
+    }
+
+    var configDirPath = _path2.default.dirname(configPath);
+    var configBaseName = _path2.default.basename(configPath, configExtension);
+
+    configPath = findConfigFile(configDirPath, configBaseName);
+    if (configPath === null) {
+      return {};
+    }
+
+    configExtension = getConfigExtension(configPath);
+  }
+
+  registerCompiler(_interpret2.default.extensions[configExtension]);
+  var config = require(configPath); // eslint-disable-line global-require
+
+  return config.default || config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.resetMocha" id="apidoc.module.mocha-webpack.resetMocha">module mocha-webpack.resetMocha</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.resetMocha.default" id="apidoc.element.mocha-webpack.resetMocha.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.resetMocha.</span>default
+        <span class="apidocSignatureSpan">(mocha, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetMocha(mocha, options) {
+  if (options.watch &amp;&amp; !options.grep) {
+    mocha.grep(null);
+  }
+  mocha.suite = mocha.suite.clone(); // eslint-disable-line no-param-reassign
+  mocha.suite.ctx = new _mocha.Context(); // eslint-disable-line no-param-reassign
+  mocha.ui(options.ui);
+  return mocha;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.runner" id="apidoc.module.mocha-webpack.runner">module mocha-webpack.runner</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.runner.run" id="apidoc.element.mocha-webpack.runner.run">
+        function <span class="apidocSignatureSpan">mocha-webpack.runner.</span>run
+        <span class="apidocSignatureSpan">(options, webpackConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(options, webpackConfig) {
+  var mocha = (0, _configureMocha2.default)(options);
+  var outputFilePath = _path2.default.join(webpackConfig.output.path, webpackConfig.output.filename);
+
+  (0, _build2.default)(webpackConfig, function (err) {
+    if (err) {
+      if (options.exit) {
+        exit(1);
+      } else {
+        exitLater(1);
+      }
+    }
+
+    mocha.files = [outputFilePath];
+    mocha.run(options.exit ? exit : exitLater);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      exit(1);
+    } else {
+      exitLater(1);
+    }
+  }
+
+  mocha.files = [outputFilePath];
+  mocha.<span class="apidocCodeKeywordSpan">run</span>(options.exit ? exit : exitLater);
+});
+}
+
+function watch(options, webpackConfig) {
+var mocha = (0, _configureMocha2.default)(options);
+
+var outputFilePath = _path2.default.join(webpackConfig.output.path, webpackConfig.output.filename);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.runner.watch" id="apidoc.element.mocha-webpack.runner.watch">
+        function <span class="apidocSignatureSpan">mocha-webpack.runner.</span>watch
+        <span class="apidocSignatureSpan">(options, webpackConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function watch(options, webpackConfig) {
+  var mocha = (0, _configureMocha2.default)(options);
+
+  var outputFilePath = _path2.default.join(webpackConfig.output.path, webpackConfig.output.filename);
+
+  var injectChangedFilesPlugin = new _InjectChangedFilesPlugin2.default();
+
+  webpackConfig.plugins.push(injectChangedFilesPlugin);
+
+  var runAgain = false;
+  var mochaRunner = null;
+
+  function runMocha() {
+    // eslint-disable-line no-inner-declarations
+    // clear up require cache to reload test bundle
+    delete require.cache[outputFilePath];
+
+    (0, _resetMocha2.default)(mocha, options);
+    mocha.files = [outputFilePath];
+
+    runAgain = false;
+
+    try {
+      mochaRunner = mocha.run(function (failures) {
+        injectChangedFilesPlugin.testsCompleted(failures &gt; 0);
+
+        // need to wait until next tick, otherwise mochaRunner = null doesn't work..
+        process.nextTick(function () {
+          mochaRunner = null;
+          if (runAgain) {
+            runMocha();
+          }
+        });
+      });
+    } catch (e) {
+      injectChangedFilesPlugin.testsCompleted(true);
+      console.error(e.stack); // eslint-disable-line no-console
+    }
+  }
+
+  (0, _watch2.default)(webpackConfig, function (err) {
+    if (err) {
+      // wait for fixed tests
+      return;
+    }
+
+    runAgain = true;
+
+    if (mochaRunner) {
+      mochaRunner.abort();
+    } else {
+      runMocha();
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _createCompiler2 = _interopRequireDefault(_createCompiler);
+
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
+
+function watch(webpackConfig, cb) {
+  var watchOptions = webpackConfig.watchOptions || {};
+  var compiler = (0, _createCompiler2.default)(webpackConfig, cb);
+  compiler.<span class="apidocCodeKeywordSpan">watch</span>(watchOptions, _lodash2.default.noop);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.utils" id="apidoc.module.mocha-webpack.utils">module mocha-webpack.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.canonicalize" id="apidoc.element.mocha-webpack.utils.canonicalize">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>canonicalize
+        <span class="apidocSignatureSpan">(value, stack)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">canonicalize = function (value, stack) {
+  var canonicalizedObj;
+<span class="apidocCodeCommentSpan">  /* eslint-disable no-unused-vars */
+</span>  var prop;
+  /* eslint-enable no-unused-vars */
+  var type = exports.type(value);
+  function withStack(value, fn) {
+    stack.push(value);
+    fn();
+    stack.pop();
+  }
+
+  stack = stack || [];
+
+  if (exports.indexOf(stack, value) !== -1) {
+    return '[Circular]';
+  }
+
+  switch (type) {
+    case 'undefined':
+    case 'buffer':
+    case 'null':
+      canonicalizedObj = value;
+      break;
+    case 'array':
+      withStack(value, function() {
+        canonicalizedObj = exports.map(value, function(item) {
+          return exports.canonicalize(item, stack);
+        });
+      });
+      break;
+    case 'function':
+      /* eslint-disable guard-for-in */
+      for (prop in value) {
+        canonicalizedObj = {};
+        break;
+      }
+      /* eslint-enable guard-for-in */
+      if (!canonicalizedObj) {
+        canonicalizedObj = emptyRepresentation(value, type);
+        break;
+      }
+    /* falls through */
+    case 'object':
+      canonicalizedObj = canonicalizedObj || {};
+      withStack(value, function() {
+        exports.forEach(exports.keys(value).sort(), function(key) {
+          canonicalizedObj[key] = exports.canonicalize(value[key], stack);
+        });
+      });
+      break;
+    case 'date':
+    case 'number':
+    case 'regexp':
+    case 'boolean':
+    case 'symbol':
+      canonicalizedObj = value;
+      break;
+    default:
+      canonicalizedObj = value + '';
+  }
+
+  return canonicalizedObj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.clean" id="apidoc.element.mocha-webpack.utils.clean">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>clean
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clean = function (str) {
+  str = str
+    .replace(/\r\n?|[\n\u2028\u2029]/g, '\n').replace(/^\uFEFF/, '')
+    .replace(/^function *\(.*\)\s*\{|\(.*\) *=&gt; *\{?/, '')
+    .replace(/\s+\}$/, '');
+
+  var spaces = str.match(/^\n?( *)/)[1].length;
+  var tabs = str.match(/^\n?(\t*)/)[1].length;
+  var re = new RegExp('^\n?' + (tabs ? '\t' : ' ') + '{' + (tabs ? tabs : spaces) + '}', 'gm');
+
+  str = str.replace(re, '');
+
+  return exports.trim(str);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.escape" id="apidoc.element.mocha-webpack.utils.escape">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>escape
+        <span class="apidocSignatureSpan">(html)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">escape = function (html) {
+  return String(html)
+    .replace(/&amp;/g, '&amp;amp;')
+    .replace(/"/g, '&amp;quot;')
+    .replace(/&lt;/g, '&amp;lt;')
+    .replace(/&gt;/g, '&amp;gt;');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.files" id="apidoc.element.mocha-webpack.utils.files">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>files
+        <span class="apidocSignatureSpan">(dir, ext, ret)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">files = function (dir, ext, ret) {
+  ret = ret || [];
+  ext = ext || ['js'];
+
+  var re = new RegExp('\\.(' + ext.join('|') + ')$');
+
+  readdirSync(dir)
+    .filter(ignored)
+    .forEach(function(path) {
+      path = join(dir, path);
+      if (statSync(path).isDirectory()) {
+        exports.files(path, ext, ret);
+      } else if (path.match(re)) {
+        ret.push(path);
+      }
+    });
+
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.filter" id="apidoc.element.mocha-webpack.utils.filter">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>filter
+        <span class="apidocSignatureSpan">(arr, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function (arr, fn) {
+  var ret = [];
+
+  for (var i = 0, l = arr.length; i &lt; l; i++) {
+    var val = arr[i];
+    if (fn(val, i, arr)) {
+      ret.push(val);
+    }
+  }
+
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return _lodash2.default.map(_lodash2.default.keys(opts), _lodash2.default.camelCase);
+};
+var parameters = paramList(options); // camel case parameters
+var parametersWithMultipleArgs = paramList(_lodash2.default.pickBy(_lodash2.default.mapValues(options, function (v) {
+return !!v.requiresArg &amp;&amp; v.multiple === true;
+}))); // eslint-disable-line max-len
+var groupedAliases = _lodash2.default.values(_lodash2.default.mapValues(options, function (value, key) {
+return [_lodash2.default.camelCase(key), key, value.alias].<span class="apidocCodeKeywordSpan">filter</span>(_lodash2.default.identity
+);
+})); // eslint-disable-line max-len
+
+function parseArgv(argv) {
+var ignoreDefaults = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : false;
+
+var parsedArgs = (0, _yargs2.default)(argv).help('help').alias('help', 'h', '?').version
+(function () {
+  return _package.version;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.forEach" id="apidoc.element.mocha-webpack.utils.forEach">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>forEach
+        <span class="apidocSignatureSpan">(arr, fn, scope)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forEach = function (arr, fn, scope) {
+  for (var i = 0, l = arr.length; i &lt; l; i++) {
+    fn.call(scope, arr[i], i);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!files.length) {
+  files = ['./test'];
+}
+
+var parsedOptions = _lodash2.default.pick(parsedArgs, parameters); // pick all parameters as new object
+var validOptions = _lodash2.default.omitBy(parsedOptions, _lodash2.default.isUndefined); // remove all undefined values
+
+_lodash2.default.<span class="apidocCodeKeywordSpan">forEach</span>(parametersWithMultipleArgs, function (key) {
+  if (_lodash2.default.has(validOptions, key)) {
+    var value = validOptions[key];
+    if (!Array.isArray(value)) {
+      validOptions[key] = [value];
+    }
+  }
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.getError" id="apidoc.element.mocha-webpack.utils.getError">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>getError
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getError = function (err) {
+  return err || exports.undefinedError();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.highlightTags" id="apidoc.element.mocha-webpack.utils.highlightTags">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>highlightTags
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">highlightTags = function (name) {
+  var code = document.getElementById('mocha').getElementsByTagName(name);
+  for (var i = 0, len = code.length; i &lt; len; ++i) {
+    code[i].innerHTML = highlight(code[i].innerHTML);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.indexOf" id="apidoc.element.mocha-webpack.utils.indexOf">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>indexOf
+        <span class="apidocSignatureSpan">(arr, obj, start)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">indexOf = function (arr, obj, start) {
+  for (var i = start || 0, l = arr.length; i &lt; l; i++) {
+    if (arr[i] === obj) {
+      return i;
+    }
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+  }
+});
+
+_lodash2.default.forOwn(validOptions, function (value, key) {
+  // validate all non-array options with required arg that it is not duplicated
+  // see https://github.com/yargs/yargs/issues/229
+  if (parametersWithMultipleArgs.<span class="apidocCodeKeywordSpan">indexOf</span>(key) === -1 &amp;&amp; _lodash2.default.isArray
+(value)) {
+    (function () {
+      var arg = _lodash2.default.kebabCase(key);
+      var provided = value.map(function (v) {
+        return '--' + arg + ' ' + v;
+      }).join(' ');
+      var expected = '--' + arg + ' ' + value[0];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.inherits" id="apidoc.element.mocha-webpack.utils.inherits">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>inherits
+        <span class="apidocSignatureSpan">(ctor, superCtor)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inherits = function (ctor, superCtor) {
+
+  if (ctor === undefined || ctor === null)
+    throw new TypeError('The constructor to "inherits" must not be ' +
+                        'null or undefined');
+
+  if (superCtor === undefined || superCtor === null)
+    throw new TypeError('The super constructor to "inherits" must not ' +
+                        'be null or undefined');
+
+  if (superCtor.prototype === undefined)
+    throw new TypeError('The super constructor to "inherits" must ' +
+                        'have a prototype');
+
+  ctor.super_ = superCtor;
+  Object.setPrototypeOf(ctor.prototype, superCtor.prototype);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.isArray" id="apidoc.element.mocha-webpack.utils.isArray">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var parsedOptions = _lodash2.default.pick(parsedArgs, parameters); // pick all parameters as new object
+var validOptions = _lodash2.default.omitBy(parsedOptions, _lodash2.default.isUndefined); // remove all undefined values
+
+_lodash2.default.forEach(parametersWithMultipleArgs, function (key) {
+  if (_lodash2.default.has(validOptions, key)) {
+    var value = validOptions[key];
+    if (!Array.<span class="apidocCodeKeywordSpan">isArray</span>(value)) {
+      validOptions[key] = [value];
+    }
+  }
+});
+
+_lodash2.default.forOwn(validOptions, function (value, key) {
+  // validate all non-array options with required arg that it is not duplicated
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.isBuffer" id="apidoc.element.mocha-webpack.utils.isBuffer">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isBuffer
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isBuffer = function (value) {
+  return typeof Buffer !== 'undefined' &amp;&amp; Buffer.isBuffer(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.isString" id="apidoc.element.mocha-webpack.utils.isString">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>isString
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isString = function (obj) {
+  return typeof obj === 'string';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.keys" id="apidoc.element.mocha-webpack.utils.keys">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>keys
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function keys() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  describe: 'path to webpack-mocha options file',
+  group: BASIC_GROUP,
+  requiresArg: true
+}
+};
+
+var paramList = function paramList(opts) {
+return _lodash2.default.map(_lodash2.default.<span class="apidocCodeKeywordSpan">keys</span>(opts), _lodash2.default.camelCase);
+};
+var parameters = paramList(options); // camel case parameters
+var parametersWithMultipleArgs = paramList(_lodash2.default.pickBy(_lodash2.default.mapValues(options, function (v) {
+return !!v.requiresArg &amp;&amp; v.multiple === true;
+}))); // eslint-disable-line max-len
+var groupedAliases = _lodash2.default.values(_lodash2.default.mapValues(options, function (value, key) {
+return [_lodash2.default.camelCase(key), key, value.alias].filter(_lodash2.default.identity);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.lookupFiles" id="apidoc.element.mocha-webpack.utils.lookupFiles">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>lookupFiles
+        <span class="apidocSignatureSpan">(path, extensions, recursive)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lookupFiles(path, extensions, recursive) {
+  var files = [];
+  var re = new RegExp('\\.(' + extensions.join('|') + ')$');
+
+  if (!exists(path)) {
+    if (exists(path + '.js')) {
+      path += '.js';
+    } else {
+      files = glob.sync(path);
+      if (!files.length) {
+        throw new Error("cannot resolve path (or pattern) '" + path + "'");
+      }
+      return files;
+    }
+  }
+
+  try {
+    var stat = statSync(path);
+    if (stat.isFile()) {
+      return path;
+    }
+  } catch (err) {
+    // ignore error
+    return;
+  }
+
+  readdirSync(path).forEach(function(file) {
+    file = join(path, file);
+    try {
+      var stat = statSync(file);
+      if (stat.isDirectory()) {
+        if (recursive) {
+          files = files.concat(lookupFiles(file, extensions, recursive));
+        }
+        return;
+      }
+    } catch (err) {
+      // ignore error
+      return;
+    }
+    if (!stat.isFile() || !re.test(file) || basename(file)[0] === '.') {
+      return;
+    }
+    files.push(file);
+  });
+
+  return files;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.map" id="apidoc.element.mocha-webpack.utils.map">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>map
+        <span class="apidocSignatureSpan">(arr, fn, scope)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (arr, fn, scope) {
+  var result = [];
+  for (var i = 0, l = arr.length; i &lt; l; i++) {
+    result.push(fn.call(scope, arr[i], i, arr));
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  describe: 'path to webpack-mocha options file',
+  group: BASIC_GROUP,
+  requiresArg: true
+}
+};
+
+var paramList = function paramList(opts) {
+return _lodash2.default.<span class="apidocCodeKeywordSpan">map</span>(_lodash2.default.keys(opts), _lodash2.default.camelCase);
+};
+var parameters = paramList(options); // camel case parameters
+var parametersWithMultipleArgs = paramList(_lodash2.default.pickBy(_lodash2.default.mapValues(options, function (v) {
+return !!v.requiresArg &amp;&amp; v.multiple === true;
+}))); // eslint-disable-line max-len
+var groupedAliases = _lodash2.default.values(_lodash2.default.mapValues(options, function (value, key) {
+return [_lodash2.default.camelCase(key), key, value.alias].filter(_lodash2.default.identity);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.parseQuery" id="apidoc.element.mocha-webpack.utils.parseQuery">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>parseQuery
+        <span class="apidocSignatureSpan">(qs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseQuery = function (qs) {
+  return exports.reduce(qs.replace('?', '').split('&amp;'), function(obj, pair) {
+    var i = pair.indexOf('=');
+    var key = pair.slice(0, i);
+    var val = pair.slice(++i);
+
+    obj[key] = decodeURIComponent(val);
+    return obj;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Note: no export default here cause of Babel 6
+module.exports = function includeFilesLoader(sourceCode, sourceMap) {
+  var _this = this;
+
+  this.cacheable();
+
+  var loaderOptions = _loaderUtils2.default.<span class="apidocCodeKeywordSpan">parseQuery</span>(this.query);
+
+  if (loaderOptions.include &amp;&amp; loaderOptions.include.length) {
+var insertIndex = 0;
+var match = sourceCode.match(useStrictRegex);
+
+if (match !== null) {
+  insertIndex = match.index + match[0].length;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.reduce" id="apidoc.element.mocha-webpack.utils.reduce">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>reduce
+        <span class="apidocSignatureSpan">(arr, fn, val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reduce = function (arr, fn, val) {
+  var rval = val;
+
+  for (var i = 0, l = arr.length; i &lt; l; i++) {
+    rval = fn(rval, arr[i], i, arr);
+  }
+
+  return rval;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function setTrue(acc, key) {
+acc[key] = true; // eslint-disable-line no-param-reassign
+return acc;
+}
+
+function getAffectedFiles(modules) {
+return modules.filter(isBuilt).map(getId).<span class="apidocCodeKeywordSpan">reduce</span>(setTrue, {});
+}
+
+function findAllDependentFiles(affectedFiles, seen, module) {
+if (seen[module.rawRequest]) return;
+seen[module.rawRequest] = true; // eslint-disable-line no-param-reassign
+
+if (affectedFiles[module.rawRequest]) return;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.slug" id="apidoc.element.mocha-webpack.utils.slug">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>slug
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">slug = function (str) {
+  return str
+    .toLowerCase()
+    .replace(/ +/g, '-')
+    .replace(/[^-\w]/g, '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.stackTraceFilter" id="apidoc.element.mocha-webpack.utils.stackTraceFilter">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>stackTraceFilter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stackTraceFilter = function () {
+  // TODO: Replace with `process.browser`
+  var slash = '/';
+  var is = typeof document === 'undefined' ? { node: true } : { browser: true };
+  var cwd = is.node
+      ? process.cwd() + slash
+      : (typeof location === 'undefined' ? window.location : location).href.replace(/\/[^\/]*$/, '/');
+
+  function isMochaInternal(line) {
+    return (~line.indexOf('node_modules' + slash + 'mocha' + slash))
+      || (~line.indexOf('components' + slash + 'mochajs' + slash))
+      || (~line.indexOf('components' + slash + 'mocha' + slash))
+      || (~line.indexOf(slash + 'mocha.js'));
+  }
+
+  function isNodeInternal(line) {
+    return (~line.indexOf('(timers.js:'))
+      || (~line.indexOf('(events.js:'))
+      || (~line.indexOf('(node.js:'))
+      || (~line.indexOf('(module.js:'))
+      || (~line.indexOf('GeneratorFunctionPrototype.next (native)'))
+      || false;
+  }
+
+  return function(stack) {
+    stack = stack.split('\n');
+
+    stack = exports.reduce(stack, function(list, line) {
+      if (isMochaInternal(line)) {
+        return list;
+      }
+
+      if (is.node &amp;&amp; isNodeInternal(line)) {
+        return list;
+      }
+
+      // Clean up cwd(absolute)
+      if (/\(?.+:\d+:\d+\)?$/.test(line)) {
+        line = line.replace(cwd, '');
+      }
+
+      list.push(line);
+      return list;
+    }, []);
+
+    return stack.join('\n');
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.stringify" id="apidoc.element.mocha-webpack.utils.stringify">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>stringify
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stringify = function (value) {
+  var type = exports.type(value);
+
+  if (!~exports.indexOf(['object', 'array', 'function'], type)) {
+    if (type !== 'buffer') {
+      return jsonStringify(value);
+    }
+    var json = value.toJSON();
+    // Based on the toJSON result
+    return jsonStringify(json.data &amp;&amp; json.type ? json.data : json, 2)
+      .replace(/,(\n|$)/g, '$1');
+  }
+
+  for (var prop in value) {
+    if (Object.prototype.hasOwnProperty.call(value, prop)) {
+      return jsonStringify(exports.canonicalize(value), 2).replace(/,(\n|$)/g, '$1');
+    }
+  }
+
+  return emptyRepresentation(value, type);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var config = _lodash2.default.clone(webpackConfig);
+config.entry = './' + entryFileName;
+
+if (include.length) {
+  var query = {
+    include: include
+  };
+  config.entry = entryLoader + '?' + JSON.<span class="apidocCodeKeywordSpan">stringify</span>(query) + '!' +
+config.entry;
+}
+
+config.context = entryPath;
+config.output = _lodash2.default.extend({}, config.output, {
+  filename: outputFileName,
+  path: outputPath
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.trim" id="apidoc.element.mocha-webpack.utils.trim">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>trim
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">trim = function (str) {
+  return str.replace(/^\s+|\s+$/g, '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.type" id="apidoc.element.mocha-webpack.utils.type">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>type
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function type(value) {
+  if (value === undefined) {
+    return 'undefined';
+  } else if (value === null) {
+    return 'null';
+  } else if (typeof Buffer !== 'undefined' &amp;&amp; Buffer.isBuffer(value)) {
+    return 'buffer';
+  }
+  return Object.prototype.toString.call(value)
+    .replace(/^\[.+\s(.+?)\]$/, '$1')
+    .toLowerCase();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.undefinedError" id="apidoc.element.mocha-webpack.utils.undefinedError">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>undefinedError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">undefinedError = function () {
+  return new Error('Caught undefined error, did you throw without specifying what?');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.utils.watch" id="apidoc.element.mocha-webpack.utils.watch">
+        function <span class="apidocSignatureSpan">mocha-webpack.utils.</span>watch
+        <span class="apidocSignatureSpan">(files, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">watch = function (files, fn) {
+  var options = { interval: 100 };
+  files.forEach(function(file) {
+    debug('file %s', file);
+    watchFile(file, options, function(curr, prev) {
+      if (prev.mtime &lt; curr.mtime) {
+        fn(file);
+      }
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _createCompiler2 = _interopRequireDefault(_createCompiler);
+
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
+
+function watch(webpackConfig, cb) {
+  var watchOptions = webpackConfig.watchOptions || {};
+  var compiler = (0, _createCompiler2.default)(webpackConfig, cb);
+  compiler.<span class="apidocCodeKeywordSpan">watch</span>(watchOptions, _lodash2.default.noop);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mocha-webpack.watch" id="apidoc.module.mocha-webpack.watch">module mocha-webpack.watch</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mocha-webpack.watch.default" id="apidoc.element.mocha-webpack.watch.default">
+        function <span class="apidocSignatureSpan">mocha-webpack.watch.</span>default
+        <span class="apidocSignatureSpan">(webpackConfig, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function watch(webpackConfig, cb) {
+  var watchOptions = webpackConfig.watchOptions || {};
+  var compiler = (0, _createCompiler2.default)(webpackConfig, cb);
+  compiler.watch(watchOptions, _lodash2.default.noop);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function prepareWebpack(options, cb) {
+var _options$files = _slicedToArray(options.files, 1);
+
+var file = _options$files[0];
+
+var glob = (0, _isGlob2.default)(file);
+
+var webpackInfoPlugin = new _webpackInfoPlugin2.<span class="apidocCodeKeywordSpan">default</span>({
+  stats: {
+    // pass options from http://webpack.github.io/docs/node.js-api.html#stats-tostring
+    // context: false,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
